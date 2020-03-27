@@ -13,7 +13,7 @@
 ### How to install and configure Jenkins in order to run the tests via it:
 1. Download the Generic Java package (.war) from https://jenkins.io/download/ 
 2. Place the dowloaded file in the root of your project
-3. Spinup an local Jenkins server by running this command at your terminal: `$ java -jar jenkins.war -httpPort=8080 --enable-future-java`. You should see the message, "Jenkins is fully up and running".
+3. Spinup an local Jenkins server by running this command at your terminal: `$ java -jar jenkins.war -httpPort=8080 --enable-future-java`. You should see the message, "Jenkins is fully up and running". You can also create a script in the package.json for this long command, so you can spinup the server easier by running: `$ npm run start-jenkins-server`
 4. Follow the wizard of the page by adding the key, choosing recommended plugins to be installed and settingup the credentials you prefer.
 5. Creat a new build by clicking top-left "New item", give a name to the project, select "Freestyle project" and click "OK.
 6. To the configuration seen:
