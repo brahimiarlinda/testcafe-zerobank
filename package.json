@@ -11,7 +11,8 @@
 		"test:chrome:headless": "testcafe chrome:headless ./acceptance-tests/tests",
 		"test:chrome:headless:5": "testcafe -c 5 chrome:headless ./acceptance-tests/tests",
 		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./acceptance-tests/tests",
-		"test:multiple": "testcafe chrome,firefox:userProfile ./acceptance-tests/tests"
+		"test:multiple": "testcafe chrome,firefox:userProfile ./acceptance-tests/tests",
+		"start-jenkins-server": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
 	},
 	"keywords": [
 		"Testcafe"
