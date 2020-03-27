@@ -1,0 +1,25 @@
+{
+	"name": "testcafe-zerobank",
+	"version": "1.0.0",
+	"description": "Exploring Testcafe framework by testing zerobank website",
+	"main": "index.js",
+	"scripts": {
+		"test:chrome": "testcafe chrome ./acceptance-tests/tests -s takeOnFails=true",
+		"test:chrome:5": "testcafe -c 5 chrome ./acceptance-tests/tests -s takeOnFail=true",
+		"test:firefox": "testcafe firefox:userProfile ./acceptance-tests/tests",
+		"test:safari": "testcafe safari ./acceptance-tests/tests",
+		"test:chrome:headless": "testcafe chrome:headless ./acceptance-tests/tests",
+		"test:chrome:headless:5": "testcafe -c 5 chrome:headless ./acceptance-tests/tests",
+		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./acceptance-tests/tests",
+		"test:multiple": "testcafe chrome,firefox:userProfile ./acceptance-tests/tests"
+	},
+	"keywords": [
+		"Testcafe"
+	],
+	"author": "Arlinda Brahimi",
+	"license": "ISC",
+	"dependencies": {
+		"prettier": "^2.0.2",
+		"testcafe": "1.8.3"
+	}
+}
