@@ -4,7 +4,7 @@
 	"description": "Exploring Testcafe framework by testing zerobank website",
 	"main": "index.js",
 	"scripts": {
-		"test:chrome": "testcafe chrome ./acceptance-tests/tests -s takeOnFails=true",
+		"test:chrome": "testcafe chrome ./acceptance-tests/tests -s takeOnFails=true --reporter list",
 		"test:chrome:5": "testcafe -c 5 chrome ./acceptance-tests/tests -s takeOnFail=true",
 		"test:firefox": "testcafe firefox:userProfile ./acceptance-tests/tests",
 		"test:safari": "testcafe safari ./acceptance-tests/tests",
@@ -21,6 +21,11 @@
 	"license": "ISC",
 	"dependencies": {
 		"prettier": "^2.0.2",
-		"testcafe": "1.8.3"
+		"testcafe": "1.8.3",
+		"testcafe-reporter-json": "^2.2.0",
+		"testcafe-reporter-list": "^2.1.0",
+		"testcafe-reporter-minimal": "^2.1.0",
+		"testcafe-reporter-nunit": "^0.1.2",
+		"testcafe-reporter-xunit": "^2.1.0"
 	}
 }
