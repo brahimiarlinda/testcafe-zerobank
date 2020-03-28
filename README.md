@@ -6,6 +6,12 @@
 * Parallel Testing.
 * Page-Object logic.
 * TestCafe main functionallity and syntax.
+* How to run the tests locally or in Jenkins.
+* Various reporting npm-packages provided by testcafe.
+### Notes
+* You need to have locally the browsers you want to run the tests. For example, if you don't have safari installed locally, then you cannot run the script `npm run test:safari`
+* The webpage tested is a sample website given by the udemy course itself http://zero.webappsecurity.com/index.html
+* You can run the tests locally or in Jenkins.
 ### How to run the tests locally.
 * Clone the repo.
 * Run `$ npm install`
@@ -68,7 +74,3 @@ Hint: You can export this report to a database and perform visualizations or cal
 * Run the tests with `npm run test:chrome`
 * You will notice that the report of the test-run is printed in an XML format at your terminal.
 Hint: For sanity checks recommended because it prints just dots.
-### Notes
-* You need to have locally the browsers you want to run the tests. For example, if you don't have safari installed locally, then you cannot run the script `npm run test:safari`
-* The webpage tested is a sample website given by the udemy course itself http://zero.webappsecurity.com/index.html
-* The tests run only locally.
