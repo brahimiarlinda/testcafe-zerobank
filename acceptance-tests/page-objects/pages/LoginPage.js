@@ -3,8 +3,8 @@ import { Selector, t } from 'testcafe';
 class LoginPage {
 	constructor() {
         this.loginForm = Selector('#login_form');
-		this.usernameInput = Selector('#user_login');
-		this.passwordInput = Selector('#user_password');
+	this.usernameInput = Selector('#user_login');
+	this.passwordInput = Selector('#user_password');
         this.submitButton = Selector('.btn-primary');
         this.errorMessage = Selector('.alert-error');
         this.forgotPasswordLink = Selector('a').withText('Forgot your password ?');
